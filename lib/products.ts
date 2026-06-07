@@ -39,6 +39,14 @@ export const PRODUCTS: Product[] = [
     image: "/images/mini-combo.jpg"
   },
   {
+    id: "combo-mini-2",
+    name: "Mini Combo 2",
+    description: "Catering special box: 3 Spring rolls, 3 Samosas, 10 Puff-puff, 1 Peppered chicken, and a 250ml cup of exotic Parfait.",
+    price: 10500,
+    category: "combos",
+    image: "/images/mini-combo-2.jpg"
+  },
+  {
     id: "combo-regular-treats",
     name: "Regular Treats",
     description: "Catering special box: 5 Spring rolls, 5 Samosas, 25 Puff-puff, and 3 Peppered chicken parts.",
