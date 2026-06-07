@@ -9,14 +9,7 @@ export interface Product {
 
 export const PRODUCTS: Product[] = [
   // MEALS
-  {
-    id: "spaghetti-turkey",
-    name: "Stir Fried Spaghetti & Turkey",
-    description: "Rich, spicy stir-fried spaghetti served with a jumbo piece of well-seasoned grilled turkey.",
-    price: 10000,
-    category: "meals",
-    image: "https://images.unsplash.com/photo-1588013270293-e17e2b172d52?w=600&auto=format&fit=crop&q=80"
-  },
+
   {
     id: "jollof-turkey",
     name: "Turkey Midwings x Jollof Rice & Plantain",
@@ -68,14 +61,6 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&auto=format&fit=crop&q=80"
   },
   {
-    id: "ready-to-fry-chops",
-    name: "Ready to Fry Small Chops (10pcs)",
-    description: "10 pieces of fresh, hand-rolled samosas and spring rolls ready to fry at your convenience.",
-    price: 5000,
-    category: "chops_platters",
-    image: "https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=600&auto=format&fit=crop&q=80"
-  },
-  {
     id: "bulk-platter",
     name: "Platter (Bulk Order)",
     description: "Boutique bulk party platter containing fresh puff-puff, spring rolls, samosa, and peppered bites.",
@@ -99,14 +84,7 @@ export const PRODUCTS: Product[] = [
     category: "chops_platters",
     image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&auto=format&fit=crop&q=80"
   },
-  {
-    id: "chicken-pie",
-    name: "Chicken Pie (1pc)",
-    description: "Flaky, buttery shortcrust pastry filled with minced chicken, carrots, and potatoes in rich gravy.",
-    price: 1500,
-    category: "chops_platters",
-    image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&auto=format&fit=crop&q=80"
-  },
+
   {
     id: "classic-tray",
     name: "Classic Tray (2 Types)",
@@ -131,22 +109,7 @@ export const PRODUCTS: Product[] = [
     category: "chops_platters",
     image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&auto=format&fit=crop&q=80"
   },
-  {
-    id: "small-chops-4samosa",
-    name: "Small chop's (4 Samosa)",
-    description: "Golden, crispy small chops pack featuring 4 pieces of tasty chicken/beef samosas.",
-    price: 4000,
-    category: "chops_platters",
-    image: "/images/flyer-menu.png"
-  },
-  {
-    id: "chicken-chips",
-    name: "Chicken and chips (2pcs)",
-    description: "2 pieces of golden crispy fried chicken served with a side of hot potato chips and dipping sauce.",
-    price: 4500,
-    category: "chops_platters",
-    image: "/images/flyer-menu.png"
-  },
+
 
   // DRINKS & PARFAIT
   {
@@ -159,64 +122,17 @@ export const PRODUCTS: Product[] = [
   },
 
   // RAW PROTEIN
-  {
-    id: "chicken-wings-raw",
-    name: "Chicken Wings (Per kg)",
-    description: "Freshly cut and cleaned raw chicken wings, weighed and packaged per kilogram.",
-    price: 6500,
-    category: "raw_protein",
-    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&auto=format&fit=crop&q=80"
-  },
-  {
-    id: "drumstick-raw",
-    name: "Drumstick (Per kg)",
-    description: "Clean, raw chicken drumsticks, weighed and packaged per kilogram.",
-    price: 6500,
-    category: "raw_protein",
-    image: "/images/flyer-chicken.png"
-  },
-  {
-    id: "gizzard-raw",
-    name: "Chicken Gizzard (Per kg)",
-    description: "Clean, raw chicken gizzards, ready for boiling and frying.",
-    price: 5500,
-    category: "raw_protein",
-    image: "/images/flyer-chicken.png"
-  },
-  {
-    id: "breast-fillet-raw",
-    name: "Chicken Fillet (Breast) (Per kg)",
-    description: "Premium skinless, boneless raw chicken breast fillet per kilogram.",
-    price: 6000,
-    category: "raw_protein",
-    image: "/images/flyer-chicken.png"
-  },
-  {
-    id: "full-chicken-raw",
-    name: "Full Chicken (Per kg)",
-    description: "Dressed, whole raw chicken weighed per kilogram.",
-    price: 5000,
-    category: "raw_protein",
-    image: "/images/flyer-chicken.png"
-  },
-  {
-    id: "carcass-raw",
-    name: "Chicken Carcass (Per kg)",
-    description: "Dressed raw chicken carcass bones, perfect for preparing rich homemade chicken stock.",
-    price: 2500,
-    category: "raw_protein",
-    image: "/images/flyer-chicken.png"
-  },
-  {
-    id: "neck-raw",
-    name: "Chicken Neck (Per kg)",
-    description: "Dressed raw chicken necks, ideal for stews and rich stocks.",
-    price: 2500,
-    category: "raw_protein",
-    image: "/images/flyer-chicken.png"
-  },
+
 
   // COMBOS
+  {
+    id: "combo-regular-treats",
+    name: "Regular Treats",
+    description: "Catering special box: 5 Spring rolls, 5 Samosas, 25 Puff-puff, and 3 Peppered chicken parts.",
+    price: 13000,
+    category: "combos",
+    image: "/images/regular-treats.jpg"
+  },
   {
     id: "combo-treats",
     name: "Combo Treats",
