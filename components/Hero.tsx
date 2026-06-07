@@ -46,9 +46,8 @@ export default function Hero({ onOpenBooking }: HeroProps) {
           Happyfoods <span className="text-brand-orange">Treats</span>
         </h1>
         
-        <p className="mx-auto mb-10 max-w-2xl font-sans text-lg font-medium text-brand-cream/90 md:text-xl md:leading-relaxed">
-          Ibadan's finest food delivery serving fresh home-cooked meals, small chops, parfaits, platters, and raw poultry. 
-          <span className="block mt-2 font-semibold text-brand-gold">Order now, enjoy today!</span>
+        <p className="mx-auto mb-10 max-w-3xl font-sans text-lg font-medium text-brand-cream/90 md:text-xl md:leading-relaxed">
+          Ibadan’s finest food delivery service, serving freshly prepared meals, small chops, premium parfaits, platters, refreshing drinks, and more—delivered with happiness.
         </p>
 
         {/* CTA Buttons */}
