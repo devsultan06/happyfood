@@ -217,7 +217,14 @@ export const PRODUCTS: Product[] = [
   },
 
   // COMBOS
- 
+  {
+    id: "combo-treats",
+    name: "Combo Treats",
+    description: "Catering special box: 6 Spring rolls, 6 Samosas, 15 Puff-puff, 3 Meat pies, 4 Beef kebabs, and 2 Chicken parts.",
+    price: 23500,
+    category: "combos",
+    image: "/images/combo-treats.jpg"
+  },
   {
     id: "combo-std-small",
     name: "Standard Combo (Feeds 2-3)",
@@ -226,28 +233,5 @@ export const PRODUCTS: Product[] = [
     category: "combos",
     image: "/images/flyer-combos.png"
   },
-  {
-    id: "combo-std-mid",
-    name: "Standard Combo (Feeds 5-7)",
-    description: "Flyer Special: 25 Puff Puff, 10 Spring Rolls, 10 Samosa, and 5 Chicken pieces.",
-    price: 21000,
-    category: "combos",
-    image: "/images/flyer-combos.png"
-  },
-  {
-    id: "combo-diamond-small",
-    name: "Diamond Combo (Feeds 8-10)",
-    description: "Flyer Special: 40 Puff Puff, 12 Spring Rolls, 12 Samosa, 6 Money Bag, 5 Chicken, and 5 Beef pieces.",
-    price: 37000,
-    category: "combos",
-    image: "/images/flyer-combos.png"
-  },
-  {
-    id: "combo-diamond-large",
-    name: "Diamond Combo (Feeds 10-15)",
-    description: "Flyer Special: 60 Puff Puff, 20 Spring Rolls, 20 Samosa, 10 Money Bag, 10 Beef Kebab, 10 Chicken, and 5 Sausage pieces.",
-    price: 62000,
-    category: "combos",
-    image: "/images/flyer-combos.png"
-  }
+
 ];
