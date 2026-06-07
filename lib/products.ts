@@ -61,6 +61,14 @@ export const PRODUCTS: Product[] = [
     category: "chops_platters",
     image: "/images/grilled-turkey.jpg"
   },
+  {
+    id: "chops-party-pack",
+    name: "Party pack small chop's",
+    description: "A delicious party pack assortment of spring rolls, samosas, puff-puff, peppered chicken, and dipping sauce. Minimum order of 5 packs.",
+    price: 3500,
+    category: "chops_platters",
+    image: "/images/party-pack-small-chops.jpg"
+  },
 
   // DRINKS & PARFAIT
   {
@@ -123,6 +131,14 @@ export const PRODUCTS: Product[] = [
     price: 6500,
     category: "combos",
     image: "/images/mini-combo-3.jpg"
+  },
+  {
+    id: "combo-mini-4",
+    name: "Mini Combo 4",
+    description: "Catering special box: 2 Spring rolls, 2 Samosas, 4 Puff-puff, and 1 Peppered chicken.",
+    price: 5000,
+    category: "combos",
+    image: "/images/mini-combo-4.jpg"
   },
   {
     id: "combo-regular-treats",
