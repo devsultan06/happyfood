@@ -58,7 +58,7 @@ export default function ProductCard({ product, quantity, onAdd, onRemove }: Prod
           <h3 className="font-serif text-lg font-bold leading-tight text-brand-dark group-hover:text-brand-orange transition-colors">
             {product.name}
           </h3>
-          <p className="mt-2 line-clamp-2 text-xs font-medium text-brand-dark/60 leading-relaxed">
+          <p className="mt-2 text-xs font-medium text-brand-dark/60 leading-relaxed">
             {product.description}
           </p>
         </div>
