@@ -21,15 +21,69 @@ export const PRODUCTS: Product[] = [
   },
 
   // CHOPS & PLATTERS
-
-
+  {
+    id: "chops-spring-rolls",
+    name: "Spring rolls",
+    description: "Crispy, delicious spring rolls filled with seasoned vegetables and meat filling.",
+    price: 650,
+    category: "chops_platters",
+    image: "/images/spring-rolls.png"
+  },
+  {
+    id: "chops-chicken-samosa",
+    name: "Chicken samosa",
+    description: "Crispy pastry triangles filled with spiced minced chicken and green peas.",
+    price: 650,
+    category: "chops_platters",
+    image: "/images/chicken-samosa.png"
+  },
+  {
+    id: "chops-puffpuff-15",
+    name: "15 puffpuff",
+    description: "15 pieces of soft, fluffy, golden-brown Nigerian puff-puff.",
+    price: 1200,
+    category: "chops_platters",
+    image: "/images/puffpuff-15pcs.jpg"
+  },
 
   // DRINKS & PARFAIT
+  {
+    id: "parfait-330ml",
+    name: "330mls exotic parfait",
+    description: "Creamy layered yogurt parfait loaded with fresh fruits, granola, and nuts.",
+    price: 6000,
+    category: "drinks_parfait",
+    image: "/images/parfait-330ml.jpg"
+  },
+  {
+    id: "parfait-550ml",
+    name: "550mls exotic parfait",
+    description: "Jumbo layered yogurt parfait loaded with fresh fruits, granola, and nuts.",
+    price: 10000,
+    category: "drinks_parfait",
+    image: "/images/parfait-550ml.jpg"
+  },
+  {
+    id: "parfait-party-cup",
+    name: "Mini party cup parfait",
+    description: "Party size yogurt parfait cups - minimum order of 5 pieces.",
+    price: 2500,
+    category: "drinks_parfait",
+    image: "/images/parfait-party-cup.jpg"
+  },
 
   // RAW PROTEIN
 
 
   // COMBOS
+  {
+    id: "combo-snack-up",
+    name: "Snack up",
+    description: "Catering special box: 15 Puff-puff and 1 Peppered chicken.",
+    price: 2900,
+    category: "combos",
+    image: "/images/snack-up.jpg"
+  },
   {
     id: "combo-mini",
     name: "Mini Combo",
