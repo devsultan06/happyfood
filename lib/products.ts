@@ -224,5 +224,13 @@ export const PRODUCTS: Product[] = [
     price: 23500,
     category: "combos",
     image: "/images/combo-treats.jpg"
-  }
+  },
+  {
+    id: "combo-standard-treats",
+    name: "Standard Treats",
+    description: "Catering special box: 12 Spring rolls, 12 Samosas, 30 Puff-puff, and 6 Chicken parts.",
+    price: 28000,
+    category: "combos",
+    image: "/images/standard-treats.jpg"
+  },
 ];
