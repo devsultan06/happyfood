@@ -45,6 +45,14 @@ export const PRODUCTS: Product[] = [
     category: "chops_platters",
     image: "/images/puffpuff-15pcs.jpg"
   },
+  {
+    id: "chops-grilled-chicken",
+    name: "Perfecty grilled chicken",
+    description: "Perfectly seasoned, succulent, and grilled chicken parts. Minimum order of 5 pieces.",
+    price: 2500,
+    category: "chops_platters",
+    image: "/images/grilled-chicken.jpg"
+  },
 
   // DRINKS & PARFAIT
   {
