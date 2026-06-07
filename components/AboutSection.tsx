@@ -8,14 +8,10 @@ export default function AboutSection() {
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           
-          {/* Left Side: CEO Portrait with decorative frames */}
-          <div className="relative flex justify-center">
-            {/* Decorative Gold Frame Backing */}
-            <div className="absolute -top-4 -left-4 h-full w-full rounded-3xl border-2 border-brand-gold/20 scale-95" />
-            <div className="absolute top-4 left-4 h-full w-full rounded-3xl bg-brand-orange/5 scale-95" />
-            
+          {/* Left Side: Clean CEO Portrait */}
+          <div className="flex justify-center">
             {/* Main Portrait Container */}
-            <div className="relative z-10 aspect-square w-full max-w-md overflow-hidden rounded-3xl border-4 border-white bg-brand-cream shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-3xl border border-brand-orange/10 bg-brand-cream shadow-md transition-shadow duration-300">
               <Image
                 src="/images/ceo.png"
                 alt="CEO of Happyfoods Treats"
@@ -33,12 +29,6 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
-
-            {/* floating badge */}
-            <div className="absolute -top-6 -right-6 z-20 hidden md:flex flex-col items-center justify-center rounded-full bg-brand-orange text-white h-24 w-24 border-4 border-white shadow-lg rotate-12 animate-float">
-              <span className="font-serif text-xl font-extrabold leading-none">100%</span>
-              <span className="text-[9px] font-bold tracking-widest uppercase mt-0.5">Fresh</span>
-            </div>
           </div>
 
           {/* Right Side: Story and Stats */}
@@ -54,20 +44,65 @@ export default function AboutSection() {
 
             <div className="font-sans text-sm font-medium text-brand-dark/70 sm:text-base leading-relaxed space-y-4">
               <p>
-                Happyfoods Treats is your go-to for delicious, home-cooked Nigerian meals delivered fresh to your door. From boutique event catering and custom party platters in Ibadan, to satisfying your daily cravings — we've got you covered.
+                Happyfoods Treats is your go-to for delicious, home-cooked Nigerian meals delivered fresh to your door. From boutique event catering and custom party platters in Ibadan, to satisfying your daily cravings, we've got you covered.
               </p>
-              <div className="bg-brand-orange/5 border border-brand-orange/15 rounded-2xl p-4 mt-2">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Our Boutique Services:</h4>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-brand-dark/90">
-                  <li className="flex items-center gap-1.5">📦 Food delivery</li>
-                  <li className="flex items-center gap-1.5">🍧 Yummy parfait in bulk</li>
-                  <li className="flex items-center gap-1.5">🥟 Small chops & grills</li>
-                  <li className="flex items-center gap-1.5">❄️ Frozen foods</li>
-                  <li className="flex items-center gap-1.5">🍳 Breakfast & Lunch delivery</li>
-                  <li className="flex items-center gap-1.5">🥣 Soups in bowls</li>
-                  <li className="flex items-center gap-1.5">🎉 Outdoor catering events</li>
-                  <li className="flex items-center gap-1.5">🎁 Food Tray surprises</li>
-                  <li className="flex items-center gap-1.5">🎓 Online & physical cooking classes</li>
+              <div className="bg-brand-orange/5 border border-brand-orange/15 rounded-2xl p-5 mt-2">
+                <h4 className="text-xs font-bold uppercase tracking-wider text-brand-orange mb-3">Our Boutique Services:</h4>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-semibold text-brand-dark/90">
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Food Delivery
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Yummy Parfait in Bulk
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Small Chops & Grills
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Frozen Foods
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Breakfast & Lunch Delivery
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Soups in Bowls
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Outdoor Catering Events
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Food Tray Surprises
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="h-3.5 w-3.5 text-brand-orange shrink-0">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                    Cooking Classes (Online & Physical)
+                  </li>
                 </ul>
               </div>
             </div>

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Questrial, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const questrial = Questrial({
+  weight: "400",
+  variable: "--font-questrial",
   subsets: ["latin"],
 });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${dmSans.variable} scroll-smooth h-full antialiased`}
+      className={`${questrial.variable} ${dmSans.variable} scroll-smooth h-full antialiased`}
     >
       <body className="min-h-full bg-brand-cream text-brand-dark font-sans flex flex-col">
         {children}

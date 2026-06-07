@@ -17,12 +17,12 @@ export default function MenuSection({ cart, onAdd, onRemove }: MenuSectionProps)
   const [searchQuery, setSearchQuery] = useState("");
 
   const categories: { label: string; value: CategoryFilter }[] = [
-    { label: "😋 All", value: "all" },
-    { label: "🥘 Meals", value: "meals" },
-    { label: "🥟 Chops & Platters", value: "chops_platters" },
-    { label: "🍧 Drinks & Parfait", value: "drinks_parfait" },
-    { label: "🍗 Raw Protein", value: "raw_protein" },
-    { label: "📦 Combos", value: "combos" },
+    { label: "All", value: "all" },
+    { label: "Meals", value: "meals" },
+    { label: "Chops & Platters", value: "chops_platters" },
+    { label: "Drinks & Parfait", value: "drinks_parfait" },
+    { label: "Raw Protein", value: "raw_protein" },
+    { label: "Combos", value: "combos" },
   ];
 
   // Filter products based on search and active category
