@@ -31,7 +31,7 @@ export default function ProductCard({ product, quantity, onAdd, onRemove }: Prod
   return (
     <div className="group flex flex-col overflow-hidden rounded-3xl bg-white border border-brand-orange/5 shadow-xs transition-all duration-300 hover:shadow-md hover:border-brand-orange/15 hover:-translate-y-1">
       {/* Product Image Slot */}
-      <div className="relative aspect-video w-full overflow-hidden bg-brand-cream">
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-brand-cream">
         <Image
           src={imgSrc}
           alt={product.name}

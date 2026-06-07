@@ -224,6 +224,5 @@ export const PRODUCTS: Product[] = [
     price: 23500,
     category: "combos",
     image: "/images/combo-treats.jpg"
-  },
-
+  }
 ];
