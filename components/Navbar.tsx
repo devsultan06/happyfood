@@ -16,13 +16,13 @@ export default function Navbar({ cartCount, onCartToggle, onOpenBooking }: Navba
           {/* Logo & Brand Name */}
           <div className="flex items-center gap-3">
             <a href="#" className="flex items-center gap-2 group">
-              <div className="relative h-14 w-14 overflow-hidden rounded-full border border-brand-orange/20 bg-white p-0.5 shadow-sm transition-transform duration-300 group-hover:scale-105">
+              <div className="relative h-16 w-16 transition-transform duration-300 group-hover:scale-105 shrink-0">
                 <Image
                   src="/images/happyfoods-logo.png"
                   alt="Happyfoods Treats Logo"
                   fill
-                  className="object-cover"
-                  sizes="56px"
+                  className="object-contain"
+                  sizes="64px"
                 />
               </div>
               <div className="flex flex-col">
