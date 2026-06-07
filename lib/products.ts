@@ -31,6 +31,14 @@ export const PRODUCTS: Product[] = [
 
   // COMBOS
   {
+    id: "combo-mini",
+    name: "Mini Combo",
+    description: "Catering special box: Crispy potato chips with dip, 2 Spring rolls, 2 Samosas, 8 Puff-puff, 1 Peppered chicken, and a 250ml cup of exotic Parfait.",
+    price: 12500,
+    category: "combos",
+    image: "/images/mini-combo.jpg"
+  },
+  {
     id: "combo-regular-treats",
     name: "Regular Treats",
     description: "Catering special box: 5 Spring rolls, 5 Samosas, 25 Puff-puff, and 3 Peppered chicken parts.",
