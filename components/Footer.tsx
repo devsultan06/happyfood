@@ -21,18 +21,18 @@ export default function Footer() {
           {/* Brand & Logo Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative h-12 w-12 overflow-hidden rounded-full border border-brand-orange/20 bg-white p-0.5 shadow-sm">
+              <div className="relative h-14 w-14 shrink-0">
                 <Image
                   src="/images/happyfoods-logo.png"
-                  alt="Happyfoods_Treats Logo"
+                  alt="Happyfoods Treats Logo"
                   fill
-                  className="object-cover"
-                  sizes="48px"
+                  className="object-contain"
+                  sizes="56px"
                 />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-base font-bold tracking-tight text-white sm:text-lg">
-                  Happyfoods<span className="text-brand-orange">_Treats</span>
+                  Happyfoods <span className="text-brand-orange">Treats</span>
                 </span>
                 <span className="text-[9px] font-medium tracking-widest uppercase text-brand-gold">
                   Delivering Happiness
@@ -98,6 +98,17 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="mailto:titilayohappiness@yahoo.com"
+                  className="inline-flex items-center gap-2 text-white/70 transition-colors hover:text-brand-orange"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-4 w-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                  titilayohappiness@yahoo.com
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://wa.me/2348142822635"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -119,13 +130,15 @@ export default function Footer() {
           {/* Location details */}
           <div className="space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-widest text-brand-gold">
-              Service Locations
+              Our Location
             </h4>
-            <div className="text-xs font-semibold text-white/70 space-y-2 leading-relaxed">
-              <p>📍 <strong>Lagos:</strong> Daily deliveries across Ikeja, Mainland, Lekki, and environs.</p>
-              <p>📍 <strong>Ibadan:</strong> Deliveries to Bodija, Akobo, Jericho, and all locations.</p>
+            <div className="text-xs font-semibold text-white/70 space-y-2.5 leading-relaxed">
+              <p className="flex items-start gap-2">
+                <span className="shrink-0 text-sm mt-0.5">📍</span>
+                <span>10, Morohunmubo Street Beside M&P Pure Waters, Bashorun, Ibadan</span>
+              </p>
               <p className="text-[10px] text-brand-orange mt-2 uppercase tracking-wider font-extrabold">
-                *Pre-order 24-48h for party trays*
+                *Deliveries across Ibadan & Lagos*
               </p>
             </div>
           </div>
@@ -134,7 +147,7 @@ export default function Footer() {
 
         {/* Bottom copyright details */}
         <div className="pt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-[11px] font-semibold text-white/50">
-          <p>© {currentYear} Happyfoods_Treats. All rights reserved.</p>
+          <p>© {currentYear} Happyfoods Treats. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-brand-orange">Privacy Policy</a>
             <a href="#" className="hover:text-brand-orange">Terms of Service</a>
