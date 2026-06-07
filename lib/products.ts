@@ -225,13 +225,5 @@ export const PRODUCTS: Product[] = [
     category: "combos",
     image: "/images/combo-treats.jpg"
   },
-  {
-    id: "combo-std-small",
-    name: "Standard Combo (Feeds 2-3)",
-    description: "Flyer Special: 25 Puff Puff, 5 Spring Rolls, 5 Samosa, and 3 Chicken pieces.",
-    price: 13000,
-    category: "combos",
-    image: "/images/flyer-combos.png"
-  },
 
 ];
