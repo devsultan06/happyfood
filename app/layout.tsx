@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Questrial, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const questrial = Questrial({
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-brand-cream text-brand-dark font-sans flex flex-col">
         {children}
+        <Analytics />
       </body>
     </html>
   );

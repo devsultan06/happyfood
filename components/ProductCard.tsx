@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Product } from "@/lib/products";
 
@@ -11,6 +12,12 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, quantity, onAdd, onRemove }: ProductCardProps) {
+  const [imgSrc, setImgSrc] = useState(product.image);
+
+  useEffect(() => {
+    setImgSrc(product.image);
+  }, [product.image]);
+
   // Format naira price helper
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-NG", {
@@ -26,15 +33,16 @@ export default function ProductCard({ product, quantity, onAdd, onRemove }: Prod
       {/* Product Image Slot */}
       <div className="relative aspect-video w-full overflow-hidden bg-brand-cream">
         <Image
-          src={product.image}
+          src={imgSrc}
           alt={product.name}
           fill
           loading="lazy"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          // In next.js Image, onerror fallback can be handled on the parent or using state
-          // To be 100% robust and follow guidelines, let's use an un-optimized fallback trigger
-          unoptimized={product.image.startsWith("/")}
+          onError={() => {
+            setImgSrc(`https://picsum.photos/seed/${encodeURIComponent(product.id)}/600/400`);
+          }}
+          unoptimized={imgSrc.startsWith("/")}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         
