@@ -53,6 +53,14 @@ export const PRODUCTS: Product[] = [
     category: "chops_platters",
     image: "/images/grilled-chicken.jpg"
   },
+  {
+    id: "chops-grilled-turkey",
+    name: "Perfectly grilled Turkey",
+    description: "Succulent, richly seasoned and perfectly grilled turkey parts. Minimum order of 5 pieces.",
+    price: 7000,
+    category: "chops_platters",
+    image: "/images/grilled-turkey.jpg"
+  },
 
   // DRINKS & PARFAIT
   {
@@ -107,6 +115,14 @@ export const PRODUCTS: Product[] = [
     price: 10500,
     category: "combos",
     image: "/images/mini-combo-2.jpg"
+  },
+  {
+    id: "combo-mini-3",
+    name: "Mini Combo 3",
+    description: "Catering special box: 3 Spring rolls, 3 Samosas, 12 Puff-puff, 1 Peppered chicken, and 1 Dip.",
+    price: 6500,
+    category: "combos",
+    image: "/images/mini-combo-3.jpg"
   },
   {
     id: "combo-regular-treats",
